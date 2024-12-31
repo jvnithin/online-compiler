@@ -1,0 +1,51 @@
+.playground-container{
+    height : 100vh;
+    display:flex;
+    flex-direction: column;
+    .icon-container{
+        display:flex;
+        gap:10px;
+        align-items:center;
+        padding:4px;
+    }
+    .content-container{
+        flex-grow:1;
+        display:grid;
+        gap:9px;
+        background-color: #EDEDED;
+        padding:5px;
+        grid-template-columns: 3fr 2fr;
+    }
+    .header-container{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        padding : 2px 0;
+    }
+    .input-output-container{
+        display:flex;
+        flex-direction:column;
+        .input-output-header{
+            background-color:#EDEDED;
+            padding:9px;
+            display:flex;
+            justify-content: space-between;
+        }
+        textarea{
+            flex-grow:1;
+            border:none;
+            resize:none;
+            padding:5px;
+            font-size: 14px;
+        }
+        textarea:focus{
+            outline:none;
+        }
+        button{
+            border:none;
+        }
+    }
+    .editor-container{
+        grid-row: 1/3;
+    }
+}

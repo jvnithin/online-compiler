@@ -14,7 +14,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path='' element={<HomeScreen />} />
-              <Route path='/playground' element={<PlaygroundScreen />} />
+              <Route path='/playground/:fileId/:folderId' element={<PlaygroundScreen />} />
             </Routes>
           </BrowserRouter>
         </ModalProvider>
